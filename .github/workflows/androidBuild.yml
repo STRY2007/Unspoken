@@ -38,6 +38,8 @@ jobs:
 
       - name: Setup Gradle & Cache
         uses: gradle/actions/setup-gradle@v3
+        with:
+          cache-read-only: false
           
       - name: Generate Native Android Directories
         env:
